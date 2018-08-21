@@ -8,9 +8,8 @@ const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark fixed-top ">
 
     <div className="navbar-nav">
-      <Link to="/" className="navbar">
-        <a> <span className="fa fa-bolt" /> JockeyExpress <span className="fa fa-bolt" /></a>
-      </Link>
+      
+        <a> &#171; Jhanisus Melendez &#187; </a>
     </div>
     <button
       className="navbar-toggler ml-auto"
@@ -26,32 +25,22 @@ const Navbar = () => (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-home" />  Home
+            <span className="fa fa-home" />  About
         </Link>
         </li>
         <li className="nav-item">
-          <Link to="/SearchHorses" className={window.location.pathname === "/SearchHorses" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-eye" /> Search Horses
+          <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <span className="fa fa-folder-open" /> Portfolio
         </Link>
         </li>
         <li className="nav-item">
-          <Link to="/AddHorse" className={window.location.pathname === "/AddHorse" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-plus" /> Add Horse
+          <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <span className="fa fa-envelope" /> Contact
         </Link>
         </li>
         <li className="nav-item">
-          <Link to="/AllHorses" className={window.location.pathname === "/AllHorses" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-list-ul" /> View All Horses
-        </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/YearlingsWeanlings" className={window.location.pathname === "/YearlingsWeanlings" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-th-list" /> Yearlings || Weanlings
-        </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/About" className={window.location.pathname === "/About" ? "nav-link active" : "nav-link"}>
-            <span className="fa fa-info-circle" /> About
+          <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <span className="fa fa-list-ul" /> Resume
         </Link>
         </li>
       </ul>

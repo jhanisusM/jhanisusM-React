@@ -3,57 +3,159 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import "./about.css";
 
 const About = () => (
   <div>
-    <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
-      <h1>Pupster</h1>
-      <h2>They're the Good Boys and Girls</h2>
+    <Hero backgroundImage={require("../images/la23.jpg")}>
+      <h1>Jhanisus Melendez</h1>
+      <a href="https://github.com/jhanisusM" class="btn btn-dark">
+        <span class="fa fa-github"></span>
+      </a>
+      <a href="https://www.linkedin.com/in/jhanisus/" class="btn btn-dark">
+        <span class="fa fa-linkedin-square"></span>
+      </a>
+      <a href="https://stackoverflow.com/users/8730147/jhanisusm" class="btn btn-dark">
+        <span class="fa fa-stack-overflow"></span>
+      </a>
     </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To Pupster!</h1>
+          <h1>About Me</h1>
+          <hr />
         </Col>
       </Row>
       <Row>
         <Col size="md-12">
+          <div className="pic">
+            <img src={require("../images/pic1.jpg")} />
+          </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
-            consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus. Pellentesque et dui id justo finibus sollicitudin at et
-            metus. Ut feugiat tellus nec metus commodo, sed suscipit nisi gravida. Duis eget
-            vestibulum quam, ut porttitor sem. Donec sagittis mi sollicitudin turpis semper, et
-            interdum risus lobortis. Vestibulum suscipit nunc non egestas tristique. Proin hendrerit
-            efficitur malesuada. Mauris lorem urna, sodales accumsan quam non, tristique tempor
-            erat. Nullam non sem facilisis, tempus tortor sit amet, volutpat nisl. Ut et turpis non
-            nunc maximus mollis a vitae tortor. Pellentesque mattis risus ac quam laoreet cursus.
-            Praesent suscipit orci neque, vestibulum tincidunt augue tincidunt non. Duis consequat
-            mattis tortor vitae mattis.
-          </p>
-          <p>
-            Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed malesuada
-            molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi ac mi
-            hendrerit semper. Nulla tincidunt accumsan lobortis. Mauris convallis sapien non nibh
-            porta accumsan. Nunc volutpat tempus porttitor. Nunc congue dictum egestas. Aliquam
-            blandit mi eu urna scelerisque, vitae volutpat ligula ultricies. Maecenas vel porta
-            augue. Fusce mauris ex, dignissim et lacinia ut, tempus eget nibh.
-          </p>
-          <p>
-            Etiam ut massa efficitur, gravida sapien non, condimentum sapien. Suspendisse massa
-            tortor, facilisis in neque sit amet, scelerisque elementum tortor. Nullam eget nibh sit
-            amet odio lobortis ullamcorper. Nulla bibendum magna nec sem pulvinar lobortis. Mauris
-            et imperdiet urna, vitae lobortis dui. Nunc elementum elit mi, non mattis enim congue
-            at. Proin mi lectus, ullamcorper id hendrerit eu, ultricies vitae lacus. Nunc vehicula,
-            erat eget laoreet condimentum, felis ante malesuada leo, nec efficitur diam nisi eget
-            nisi. Cras arcu lacus, tristique in bibendum vitae, elementum eget lorem. Maecenas
-            vestibulum volutpat orci eu pharetra. Praesent vel blandit ante, nec faucibus libero.
-            Sed ultrices lorem ex, eu facilisis libero convallis ac. Vivamus id dapibus eros. Nullam
-            tempor sem rhoncus porta semper. Proin bibendum vulputate nisl, fringilla interdum elit
-            pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet massa.
+            I am an analytical full stack web developer with 2+ years as an image reading analyst. My attention to detail and adaptability
+              to shifting priorities has afforded me the ability to facilitate and act as a liaison for various projects.
+              I have a technical background in the hard sciences, and I am a UCLA bootcamp alumnus with experience in dynamic
+              web applications using Mongodb, MySQL, Express, Node JS, React, HTML/CSS, and C++. Driven to exceed customer
+              expectations by delivering valuable well-designed products that innovate technical solutions.
           </p>
         </Col>
       </Row>
+      {/* ----------------------------Technologies----------------------  */}
+      <Hero backgroundImage={require("../images/la6.jpg")}>
+        <h1>Technologies</h1>
+      </Hero>
+      <Row>
+        <Col size="md-12">
+          <h1>Technologies</h1>
+          <hr />
+        </Col>
+      </Row>
+      <Row>
+        <Col size="md-12">
+
+          <div class="row" >
+            <div className="col-4">
+              <ul>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> MERN FullStack </span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> JavaScript</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> MongoDB</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> Express.js</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> React</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> Node.js</span>
+                </li>
+              </ul>
+            </div>
+            <div className="col-4">
+              <ul >
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> HTML</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> CSS</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> jQuery</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> APIs and AJAX</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> GIT/Github/Heroku</span>
+                </li>
+              </ul>
+            </div>
+            <div className="col-4">
+              <ul >
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> Firebase </span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> MySQL</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> Sequelize</span>
+                </li>
+                <li>
+                  <span className="fa fa-floppy-o"></span>
+                  <span> NPM packages</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Col>
+      </Row>
+
+
+
+
+
+
+
+
+      {/* ----------------------------Portfolio----------------------  */}
+      <Hero backgroundImage={require("../images/la2.jpg")}>
+        <h1>Portfolio</h1>
+      </Hero>
+      <Row>
+        <Col size="md-12">
+          <h1>Technologies</h1>
+          <hr />
+        </Col>
+      </Row>
+      <Row>
+        <Col size="md-12">
+
+        </Col>
+      </Row>
+
+
+
+
     </Container>
   </div>
 );
