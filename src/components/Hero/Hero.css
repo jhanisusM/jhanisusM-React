@@ -1,8 +1,8 @@
 .hero {
+  padding: 0;
   height: 500px;
   background-size: cover;
   background-position: center;
-  position: relative;
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -13,13 +13,13 @@
 .hero::after {
   content: "";
   display: block;
-  opacity: .2;
+  opacity: .1;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  /* background: black; */
 }
 
 .hero * {
@@ -27,11 +27,12 @@
   z-index: 2;
 }
 
-.hero h1, .hero h2 {
+.hero h1, .hero h2, .hero h3, .hero h4{
+  font-family: 'Vidaloka', serif;
   color: white;
 }
 
-.hero h1 {
+.hero h1, .hero h2, .hero h3, .hero h4 {
   font-size: 60px;
   padding-top: 140px;
   margin-top: 0;
