@@ -4,25 +4,31 @@ import Hero from "../../../components/Hero";
 import Col from "../../../components/Col";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 import Container from "../../../components/Container";
+import axios from "axios";
 
 class contact extends Component {
     constructor() {
-        super()
+        super();
         this.state = {
             name: "",
             email: "",
             message: "",
         };
-        this.handleInputChange = this.handleInputChange.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
     };
 
 
 
 
 
-    handleFormSubmit = event => {
+    async handleFormSubmit(event) {
         event.preventDefault();
-
+        console.log(this.state.name);
+        const { name, email, message } = this.state;
+        const form = await axios.post('/api/form', {
+            name, email, message,
+        })
     };
 
     handleInputChange = event => {
@@ -66,13 +72,15 @@ class contact extends Component {
 
                                 </div>
                             </div>
-                            <Form style={{ width: '600px' }}>
+
+
+                            <Form style={{ width: '600px' }} onSubmit={this.handleFormSubmit}>
                                 <FormGroup>
                                     <Label for="name">Name:</Label>
                                     <Input
                                         type="text"
                                         name="name"
-                                        value={this.state.name}
+                                        // value={this.state.name}
                                         onChange={this.handleInputChange}
                                         placeholder="Name (required)" />
                                 </FormGroup>
@@ -81,7 +89,7 @@ class contact extends Component {
                                     <Input
                                         type="email"
                                         name="email"
-                                        value={this.state.email}
+                                        // value={this.state.email}
                                         onChange={this.handleInputChange}
                                         placeholder="Eamil (required)" />
                                 </FormGroup>
@@ -90,12 +98,15 @@ class contact extends Component {
                                     <Input
                                         type="textarea"
                                         name="message"
-                                        value={this.state.message}
+                                        // value={this.state.message}
                                         onChange={this.handleInputChange}
                                         placeholder="Message"
                                         style={{ height: 100 }} />
                                 </FormGroup>
-                                <Button>Send</Button>
+                                <Button
+                                    disabled={!(this.state.name && this.state.email)}
+                                >
+                                    Send</Button>
                             </Form>
                         </Col>
                     </Row>
