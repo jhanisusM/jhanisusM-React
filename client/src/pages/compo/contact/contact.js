@@ -74,7 +74,7 @@ class contact extends Component {
                             </div>
 
 
-                            <Form style={{ width: '600px' }} onSubmit={this.handleFormSubmit}>
+                            <Form style={{ width: 'auto' }} onSubmit={this.handleFormSubmit}>
                                 <FormGroup>
                                     <Label for="name">Name:</Label>
                                     <Input
