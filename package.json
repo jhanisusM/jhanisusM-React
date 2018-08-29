@@ -1,21 +1,32 @@
 {
   "name": "jhanisusM-React",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.4"
+  },
   "description": "",
   "main": "index.js",
-   "dependencies": {
+  "dependencies": {
+    "axios": "^0.18.0",
+    "if-env": "^1.0.4",
     "body-parser": "^1.18.3",
-    "concurrently": "^3.6.1",
     "express": "^4.16.3",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^4.6.8"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
     "nodemon": "^1.18.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node index.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \" npm run client\""
+    "dev": "concurrently \"npm run server\" \" npm run client\"",
+    "install": "cd client && yarn install;",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,4 +39,4 @@
     "url": "https://github.com/jhanisusM/jhanisusM-React/issues"
   },
   "homepage": "https://github.com/jhanisusM/jhanisusM-React#readme"
- }
+}
