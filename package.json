@@ -11,7 +11,9 @@
     "if-env": "^1.0.4",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "nodemailer": "^4.6.8"
+    "nodemailer": "^4.6.8",
+    "bower":"^1.8.0",
+    "grunt":"^1.0.1"
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
@@ -26,7 +28,9 @@
     "dev": "concurrently \"npm run server\" \" npm run client\"",
     "install": "cd client && yarn install;",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "build": "grunt dist",
+    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
   },
   "repository": {
     "type": "git",
