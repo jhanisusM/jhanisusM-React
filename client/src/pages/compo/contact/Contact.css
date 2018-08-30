@@ -1,0 +1,4 @@
+#map{
+    /* -webkit-filter: grayscale(1); */
+    filter: nightMode(4);
+    }

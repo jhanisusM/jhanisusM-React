@@ -5,6 +5,19 @@ import Col from "../../../components/Col";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 import Container from "../../../components/Container";
 import axios from "axios";
+import {withScriptjs, withGoogleMap, GoogleMap, Marker,} from "react-google-maps";
+import "./Contact.css";
+
+const MapWithAMarker = withScriptjs(withGoogleMap(props =>
+    <GoogleMap
+        defaultZoom={13}
+        defaultCenter={{lat: 34.145911, lng: -118.00095}}
+    >
+        <Marker
+            position={{lat: 34.145911, lng: -118.00095}}
+        />
+    </GoogleMap>
+));
 
 class contact extends Component {
     constructor() {
@@ -17,10 +30,6 @@ class contact extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
     };
-
-
-
-
 
     async handleFormSubmit(event) {
         event.preventDefault();
@@ -58,22 +67,26 @@ class contact extends Component {
                     <Row>
                         <Col size="md-12">
                             <div className="row">
-                                <div className="col-4" id="map">
+                                <div className="col-sm-6 col-md-6" style={{textAlign: "center"}} id="map">
+                                    <MapWithAMarker
+                                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJYfO25-ti-9JTfBZRIQ9gHkJJVuKMX44&libraries=places&callback=initMap"
+                                        loadingElement={<div style={{ height: `100%` }} />}
+                                        containerElement={<div style={{ height: `400px` }} />}
+                                        mapElement={<div style={{ height: `100%` }} />}
+                                    />
                                 </div>
-                                <div className="col-6">
+                                <br />
+                                <div className="col-sm-6 col-md-6" style={{textAlign: "left"}}>
                                     <br />
                                     City of Monrovia, CA, United States
-                        <br />
+                                     <br />
                                     Phone: 213.948.6356
-                        <br />
+                                     <br />
                                     Email: jhanisus@gmail.com
-                        <br />
+                                     <br />
                                     <p>leave me a message:</p>
-
                                 </div>
                             </div>
-
-
                             <Form style={{ width: 'auto' }} onSubmit={this.handleFormSubmit}>
                                 <FormGroup>
                                     <Label for="name">Name:</Label>
