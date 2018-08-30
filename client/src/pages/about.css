@@ -4,9 +4,9 @@
 }
 
 #title{
-    font-family: 'Cardo', serif;
+    font-family: 'Racing Sans One', cursive;
 }
 
-p,.row{
-    font-family: 'Sumana', serif;
+.row,p{
+    font-family: 'Voces', cursive;
 }

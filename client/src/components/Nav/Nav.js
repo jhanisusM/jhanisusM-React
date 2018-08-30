@@ -6,9 +6,8 @@ import "./Nav.css";
 const Navbar = () => (
   <div className="container">
     <nav className="navbar navbar-expand-sm navbar-dark fixed-top ">
-
       <div id="main">
-        <a> &#171; Jhanisus Melendez &#187; </a>
+        <a> Jhanisus Melendez. </a>
       </div>
       <button
         className="navbar-toggler ml-auto"

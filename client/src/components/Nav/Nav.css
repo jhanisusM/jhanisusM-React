@@ -3,7 +3,7 @@
 }
 
 .navbar-nav li {
-    font-family: 'Cardo', serif;
+    font-family: 'Changa', sans-serif;    
     text-indent: 17px;
     line-height: 33px;
 }
@@ -14,8 +14,8 @@
 }
 
 .navbar-nav li a:hover {
-    /* text-decoration: none; */
-    background: white;
+    text-decoration: none;
+    background: #ffffff;
 }
 
 
@@ -25,18 +25,9 @@
 }
 
 #main{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 20px;
-    font-family: 'Cardo', serif;
+    font-family: 'Changa', sans-serif;
 }
 
 
-
-/* font-family: 'Cardo', serif; Perfect for pastor
-font-family: 'Vidaloka', serif;
-font-family: 'Lalezar', cursive;
-font-family: 'Fugaz One', cursive;
-font-family: 'Do Hyeon', sans-serif;
-font-family: 'Carter One', cursive;
-font-family: 'Racing Sans One', cursive;
-font-family: 'Norican', cursive; */
