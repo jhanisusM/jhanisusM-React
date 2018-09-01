@@ -14,72 +14,136 @@ class portfolio extends Component {
 
     state = {
         friends,
-        topScore: 0,
         clicked: [],
     };
 
-
-    removeFriend = id => {
-        const friends = this.state.friends.filter(friend => friend.id !== id);
-        this.setState({ friends });
+    refresh = () => {
+        this.setState({ friends })
     };
 
-clickedButton = props => {
-    console.log(props);
-    switch (props.name){
-        case "showAll":
-        console.log("Show All button")
-        break;
-        case "react":
-        console.log("React FrameWork")
-        break;
-        case "dynamic":
-        console.log("Dynamic Websites")
-        break;
-        case "static":
-        console.log("Static Websites")
-        break;
-        case "mongodb":
-        console.log("MongodB Implementation")
-        break;
-        case "mysql":
-        console.log("MySQL Implementation")
-        break;
-        default:
-        console.log("Load All")
-    }
-};
-
-
-    clickedImage = props => {
-        
-          
-        console.log(this.state.friends[0].id);
-        if (this.state.clicked.includes(props.id) === false) {
-            this.state.clicked.push(props.id);
-            this.setState({
-                score: this.state.score + 1,
-            });
-            if (this.state.score >= this.state.topScore) {
-                this.setState((prevState) => ({
-                    topScore: prevState.score,
-                    topMessage: "You guessed correctly!"
-                }))
-            };
-        }
-        else {
-            this.setState({
-                score: 0,
-                clicked: [],
-                topMessage: "You guessed incorrectly!"
-            });
-            if (this.state.score >= this.state.topScore) {
-                this.setState({ topScore: this.state.score })
-            };
-            this.randomArray();
-        };
+    componentDidMount = () => {
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
     };
 
+    clickedShowAll = () => {
+        console.log("Show All");
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+       
+    };
+
+    clickedReact = () => {
+        console.log("React Frame Work"); 
+        this.refresh()
+        const amigos = this.state.friends.filter(friend => friend.technology == "react");
+        this.setState({
+            friends: amigos,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+    };
+
+    clickDynamic = () => {
+        console.log("Click Dynamic");
+        const friends = this.state.friends.filter(friend => friend.technology === "dynamic");
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+    };
+    clickedStatic = () => {
+        console.log("Static Sites");
+        const friends = this.state.friends.filter(friend => friend.technology === "static");
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+    };
+
+    clickedMongodb = () => {
+        console.log("Mongo DB");
+        const friends = this.state.friends.filter(friend => friend.technology === "mongo");
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+    };
+
+    clickedMysql = () => {
+        console.log("My SQL");
+        const friends = this.state.friends.filter(friend => friend.technology === "mysql");
+        this.setState({
+            friends,
+            clicked: this.state.friends.map(item => (
+                <FriendCard
+                    id={item.id}
+                    key={item.id}
+                    name={item.name}
+                    image={item.image}
+                    occupation={item.occupation}
+                    location={item.location}
+                />
+            ))
+        });
+    };
 
     render() {
         return (
@@ -88,7 +152,6 @@ clickedButton = props => {
                     <h3>Portfolio</h3>
                 </Hero>
                 <Container style={{ marginTop: 30 }}>
-
                     <Row>
                         <Col size="md-12" id="title">
                             <h4>Portfolio</h4>
@@ -99,55 +162,42 @@ clickedButton = props => {
                         <Col size="md-12">
                             <div className="row">
                                 <div className="col-sm-12 col-md-12" id="map">
-                                    <FormGroup onClick={this.clickedButton}>
-                                        <Button
-                                        type="button"
-                                        value="showAll"
-                                        name="showAll"
-                                                                                
-                                        > <span className="fa fa-filter"/> Show All</Button>
-                                        <span id="space"/>
-                                        <Button
-                                        name="react"
-                                        > <span className="fa fa-folder-open"/> React FrameWork</Button>
-                                        <span id="space"/>
-                                        <Button
-                                        name="dynamic"
-                                        > <span className="fa fa-archive"/> Dynamic Websites</Button>
+                                    <FormGroup>
+                                        <Button alt="Show All"
+                                            onClick={this.clickedShowAll}
+                                        > <span className="fa fa-filter" /> Show All</Button>
                                         <span id="space" />
                                         <Button
-                                        name="static"
-                                        > <span className="fa fa-html5"/> Static Websites</Button>
+                                            alt="React"
+                                            onClick={this.clickedReact}
+                                        > <span className="fa fa-folder-open" /> React FrameWork</Button>
                                         <span id="space" />
                                         <Button
-                                        name="mongodb"
-                                        > <span className="fa fa-stack-exchange"/> Mongodb Implementation</Button>
+                                            alt="Dynamic"
+                                            onClick={this.clickDynamic}
+                                        > <span className="fa fa-archive" /> Dynamic Websites</Button>
                                         <span id="space" />
                                         <Button
-                                        name="mysql"
-                                        > <span className="fa fa-stack-exchange"/> MySQL Implementation</Button>
+                                            alt="Static"
+                                            onClick={this.clickedStatic}
+                                        > <span className="fa fa-html5" /> Static Websites</Button>
+                                        <span id="space" />
+                                        <Button
+                                            alt="Mongo DB"
+                                            onClick={this.clickedMongodb}
+                                        > <span className="fa fa-stack-exchange" /> Mongodb Implementation</Button>
+                                        <span id="space" />
+                                        <Button
+                                            alt="MySQL"
+                                            onClick={this.clickedMysql}
+                                        > <span className="fa fa-stack-exchange" /> MySQL Implementation</Button>
                                     </FormGroup>
                                 </div>
-
-
-
-
-                                {this.state.friends.map(item => (
-                                    <FriendCard
-                                        clickedImage={this.clickedImage}
-                                        id={item.id}
-                                        key={item.id}
-                                        name={item.name}
-                                        image={item.image}
-                                        occupation={item.occupation}
-                                        location={item.location}
-                                    />
-                                ))}
+                                {this.state.clicked}
                             </div>
                         </Col>
                     </Row>
                 </Container>
-
             </div >
         )
     }
