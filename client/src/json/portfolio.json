@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Personal Portfolio",
+    "image": "https://lh4.googleusercontent.com/Vyppk0btZ-eLwFqtsJY7OGstoO1pwoTC_12WbyYcSrKq6JENlc9j3VvU7NwpgCCqZCdabT6-NRqpWJDrdtQO=w1920-h910-rw",
+    "description": "My personal portfolio it’s a web application that utilizes React in the front end, and express as its back end.",
+    "app": "https://jhanisus.herokuapp.com/",
+    "repo": "https://github.com/jhanisusM/jhanisusM-React",
+    "tech": "react",
+    "tech2":""
+  },
+  {
+    "id": 2,
+    "name": "Daichan",
+    "image": "https://lh4.googleusercontent.com/V65AtPd4s6V-Ejst7rpL0EyLergvHUxx4EBBWc5SCUCdWCWaeVpVXyV9k2PKz2x3099yok0YG5U1bzT2uQCq=w1283-h910",
+    "description": "Static  website developed for a family owned Japanese restaurant. This site displays information about the restaurant, and surveys the customers’ favorite dishes using firebase.",
+    "app": "https://jhanisusm.github.io/daichan/",
+    "repo": "https://github.com/jhanisusM/daichan",
+    "tech": "static",
+    "tech2":""
+  },
+  {
+    "id": 3,
+    "name": "Trivia Game",
+    "image": "https://lh6.googleusercontent.com/eBHP8-7D98cFTo_c3FxeBwvThmsnUNgzlXGneGHhwIqYMh4eD4Po6ISPQvKs5O29z2c88nl0TSqKV3VdAP_6=w1920-h910",
+    "description": "Trivia is a game which utilizes JavaScript for the logic and jQuery to manipulate the HTML.",
+    "app": "https://jhanisusm.github.io/TriviaGame/",
+    "repo": "https://github.com/jhanisusM/TriviaGame",
+    "tech": "static",
+    "tech2":""
+  },
+  {
+    "id": 4,
+    "name": "Eat-Da-Burger",
+    "image": "https://lh3.googleusercontent.com/5fHeOmnAWzFRTOz4clNpcHjs8CD_MlTQ7RUGTMkLwNMCeEXX2_YP5HIeH8aHacl8hKNSe_afmr2m45Fmq7U6=w1920-h910",
+    "description": "Eat-Da-Burger is a logger with MySQL, Node, Express, Handlebars and a homemade ORM.",
+    "app": "https://drive.google.com/file/d/12kGAL37hddH6sihwsPuZXvczo3YHE5Hr/view",
+    "repo": "https://github.com/jhanisusM/eat-da-burger/edit/master/README.md",
+    "tech": "dynamic",
+    "tech2":"mysql"
+  },
+  {
+    "id": 5,
+    "name": "Jockey Express",
+    "image": "https://lh4.googleusercontent.com/K_Z9Xx7XYC7JPIDgao5M30NzHP71h2_EvL1pW7PHy_lgeU-y0acbQgTn1PQ4zhzBFcbOOtJQiR8L7_v4e-Ej=w1920-h910",
+    "description": "Jockey Express is dynamic site that enables horse owners CRUD accessibility. This application was deployed through heroku, and utilizes JavaScript, Express, Sequelize, MySQL, HTML and CSS.",
+    "app": "https://jockeyexpressv1.herokuapp.com/",
+    "repo": "https://github.com/jhanisusM/Hashi-Project2",
+    "tech": "dynamic",
+    "tech2":"mysql"
+  },
+  {
+    "id": 6,
+    "name": "Bamazon",
+    "image": "https://lh6.googleusercontent.com/XKMkTMxRiNhtBCVxWpyhQi7WMj7d6XW2g3s-_CKEFh1BiEcBntrUO9Fyede_p1c29MVRNJX3qt68I12hX3BD=w2940-h5226",
+    "description": "Bamazon is an Amazon-like storefront with a MySQL data based linked to it. The app takes in orders from customers and deplete stock from the store's inventory.",
+    "app": "https://drive.google.com/file/d/1Q7wjaqreg-Ru4SzIaCqHSAutW12wpvhb/view",
+    "repo": "https://github.com/jhanisusM/MySQLandNode",
+    "tech": "mysql",
+    "tech2":""
+  },
+  {
+    "id": 7,
+    "name": "Clicky-Game",
+    "image": "https://lh5.googleusercontent.com/y5LmNkLp1WZvsgXkho37mOMtBvWCGgw865cB3EjF8gd9o8fas0pgJA1dC3149Z8ThoaCXpOL0l1yNBciiP-g=w2940-h5226",
+    "description": "Clicky Game is a web app that utilizes React for the front end. It keeps a score of the user, and restarts the score when the user clicks on the image more than once.",
+    "app": "https://myclickyge.herokuapp.com/",
+    "repo": "https://github.com/jhanisusM/ClickyGame",
+    "tech": "react",
+    "tech2":""
+  },
+  {
+    "id": 8,
+    "name": "Jockey Express V.2.0",
+    "image": "https://lh5.googleusercontent.com/GmXRCKhD2uQPUCfk7wON6wLIwuDB0YupFRik7f1WCBUywfX8RU2vMSdZ8VrLmG19H1zolGmLMlwCtBu3eXP6=w1920-h910",
+    "description": "This web application enables horse owners to oversee, access, update, view, modify and update a stable database. It allows the user to enter the sire, mare, gender, age, and picture of the horse of interest",
+    "app": "https://drive.google.com/file/d/1-PTfoRmQ69HeSyUUS2OA9LoSSUDgEsk9/view?usp=sharing",
+    "repo": "https://github.com/jhanisusM/reactJE.V.2.0",
+    "tech": "react",
+    "tech2":"mongo"
+  },
+  {
+    "id": 9,
+    "name": "NYT - React",
+    "image": "https://lh5.googleusercontent.com/X1BOE9WXhXLvv5JL59qAG-ZRpbNB2-NrMMi1fh4a6ao8m0nHR6Auh4SGoXbyBrUvb0j5Jp9XYxe2PxPexntt=w2940-h5226",
+    "description": "This is a React-based NYT scraper. This web-application enables the user to save, erase, query and display articles based on user’s searches or articles of interest.",
+    "app": "https://homeworknytreact20.herokuapp.com/",
+    "repo": "https://github.com/jhanisusM/nytreact",
+    "tech": "react",
+    "tech2":"mongo"
+  }
+]

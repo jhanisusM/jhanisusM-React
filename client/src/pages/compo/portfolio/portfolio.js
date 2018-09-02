@@ -4,8 +4,8 @@ import Hero from "../../../components/Hero";
 import Col from "../../../components/Col";
 import FriendCard from "../../../components/FriendCard";
 import Container from "../../../components/Container";
-import friends from "./portfolio.json";
-import {  FormGroup, Button } from "reactstrap";
+import friends from "../../../json/portfolio";
+import { FormGroup, Button } from "reactstrap";
 import "./portfolio.css";
 
 class portfolio extends Component {
@@ -13,11 +13,11 @@ class portfolio extends Component {
     state = {
         friends,
         clicked: [],
-        react:[],
-        dynamic:[],
-        static:[],
-        mongo:[],
-        mysql:[],
+        react: [],
+        dynamic: [],
+        static: [],
+        mongo: [],
+        mysql: [],
     };
 
     componentDidMount = () => {
@@ -29,69 +29,77 @@ class portfolio extends Component {
                     key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            )),
-            react:this.state.friends.filter(friend => friend.technology === "react"),
-            dynamic:this.state.friends.filter(friend => friend.technology === "dynamic"),
-            static:this.state.friends.filter(friend => friend.technology === "static"),
-            mongo:this.state.friends.filter(friend => friend.technology === "mongo"),
-            mysql:this.state.friends.filter(friend => friend.technology === "mysql"),
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                )),
+                react: this.state.friends.filter(friend => (friend.tech === "react" || friend.tech2 === "react")),
+            dynamic: this.state.friends.filter(friend => (friend.tech === "dynamic" || friend.tech2 === "dynamic")),
+            static: this.state.friends.filter(friend => (friend.tech === "static" || friend.tech2 === "static")),
+            mongo: this.state.friends.filter(friend => (friend.tech === "mongo" || friend.tech2 === "mongo")),
+            mysql: this.state.friends.filter(friend => (friend.tech === "mysql" || friend.tech2 === "mysql")),
         });
     };
-
+    
     clickedShowAll = () => {
-        console.log("Show All");
         this.setState({
             friends,
             clicked: this.state.friends.map(item => (
                 <FriendCard
-                    id={item.id}
+                id={item.id}
                     key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            ))
-        });
-       
-    };
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                ))
+            });
+            
+        };
 
-    clickedReact = () => {
-        console.log("React Frame Work"); 
-        this.setState({
+        clickedReact = () => {
+            this.setState({
             clicked: this.state.react.map(item => (
                 <FriendCard
-                    id={item.id}
-                    key={item.id}
+                id={item.id}
+                key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            ))
-        });
-    };
-
-    clickDynamic = () => {
-        console.log("Click Dynamic");
-        this.setState({
-            clicked: this.state.dynamic.map(item => (
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                ))
+            });
+        };
+        
+        clickDynamic = () => {
+            this.setState({
+                clicked: this.state.dynamic.map(item => (
                 <FriendCard
-                    id={item.id}
-                    key={item.id}
+                id={item.id}
+                key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            ))
-        });
-    };
-    clickedStatic = () => {
-        console.log("Static Sites");
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                ))
+            });
+        };
+        clickedStatic = () => {
         this.setState({
             clicked: this.state.static.map(item => (
                 <FriendCard
@@ -99,40 +107,47 @@ class portfolio extends Component {
                     key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            ))
-        });
-    };
-
-    clickedMongodb = () => {
-        console.log("Mongo DB");
-        this.setState({
-            clicked: this.state.mongo.map(item => (
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                ))
+            });
+        };
+        
+        clickedMongodb = () => {
+            this.setState({
+                clicked: this.state.mongo.map(item => (
                 <FriendCard
-                    id={item.id}
-                    key={item.id}
+                id={item.id}
+                key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
-                />
-            ))
-        });
-    };
-
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
+                    />
+                ))
+            });
+        };
+        
     clickedMysql = () => {
-        console.log("My SQL");
         this.setState({
             clicked: this.state.mysql.map(item => (
                 <FriendCard
-                    id={item.id}
+                id={item.id}
                     key={item.id}
                     name={item.name}
                     image={item.image}
-                    occupation={item.occupation}
-                    location={item.location}
+                    description={item.description}
+                    app={item.app}
+                    repo={item.repo}
+                    tech={item.tech}
+                    tech2={item.tech2}
                 />
             ))
         });
@@ -163,7 +178,7 @@ class portfolio extends Component {
                                         <Button
                                             alt="React"
                                             onClick={this.clickedReact}
-                                        > <span className="fa fa-folder-open" /> React FrameWork</Button>
+                                        > <span className="fa fa-folder-open" /> React-based</Button>
                                         <span id="space" />
                                         <Button
                                             alt="Dynamic"
