@@ -29,17 +29,17 @@ app.post('/api/form', (req, res) => {
             }
         });
 
-        let mailOptions ={
-            from:"test@testaccount.com",
-            to:'mv3yfwu2qfzk4bmz@ethereal.email',
-            replyTo:"test@testaccount.com",
-            subject:'New Message Homboy',
-            text:req.body.message,
-            html:htmlEmail
+        let mailOptions = {
+            from: "test@testaccount.com",
+            to: 'mv3yfwu2qfzk4bmz@ethereal.email',
+            replyTo: "test@testaccount.com",
+            subject: `Thank you for contacting me ${req.body.name}!`,
+            text: req.body.message,
+            html: htmlEmail
         };
 
-        transporter.sendMail(mailOptions, (err,info)=>{
-            if(err){
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
                 return console.log(err)
             }
             console.log("Message Was sent: %s", info.message);

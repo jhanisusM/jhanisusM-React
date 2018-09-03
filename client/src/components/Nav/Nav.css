@@ -15,13 +15,13 @@
 
 .navbar-nav li a:hover {
     text-decoration: none;
-    background: #ffffff;
+    background: #585858;
 }
 
 
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
-    color: #282e34fc;
+    color: #fffffffc;
 }
 
 #main{

@@ -22,22 +22,27 @@ const Navbar = () => (
       <div className="navbar-collapse collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/about" className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-home" />  About
         </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/tech" className={window.location.pathname === "/tech" ? "nav-link active" : "nav-link"}>
+              <span className="fa fa-floppy-o" />  Technology
+        </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/portfolio" className={window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-folder-open" /> Portfolio
         </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-envelope" /> Contact
         </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/resume" className={window.location.pathname === "/resume" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-list-ul" /> Resume
         </Link>
           </li>

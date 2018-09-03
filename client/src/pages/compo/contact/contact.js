@@ -35,9 +35,10 @@ class contact extends Component {
         event.preventDefault();
         console.log(this.state.name);
         const { name, email, message } = this.state;
+        window.location.reload();
         const form = await axios.post('/api/form', {
             name, email, message,
-        })
+        });
     };
 
     handleInputChange = event => {
