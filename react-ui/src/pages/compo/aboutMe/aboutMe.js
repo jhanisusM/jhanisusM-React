@@ -35,7 +35,7 @@ const aboutMe = () => {
                     <img src={require("../../../images/pic1.jpg")} alt="" />
                 </div>
                 <p>
-                    I am an analytical full stack web developer with 2+ years as an image reading analyst. My attention to detail and adaptability
+                    I am an analytical full stack web developer with 3 years as an image reading analyst. My attention to detail and adaptability
                       to shifting priorities has afforded me the ability to facilitate and act as a liaison for various projects.
                       I have a technical background in the hard sciences, and I am a UCLA bootcamp alumnus with experience in dynamic
                       web applications using Mongodb, MySQL, Express, Node JS, React, HTML/CSS, and C++. Driven to exceed customer
