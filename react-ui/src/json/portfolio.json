@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Bamazon",
-    "image": "https://lh6.googleusercontent.com/XKMkTMxRiNhtBCVxWpyhQi7WMj7d6XW2g3s-_CKEFh1BiEcBntrUO9Fyede_p1c29MVRNJX3qt68I12hX3BD=w2940-h5226",
+    "image": "https://drive.google.com/open?id=1-kmOXcNTSaK3QGi-9bP3V5d5HhoaYr9h",
     "description": "Bamazon is an Amazon-like storefront with a MySQL data based linked to it. The app takes in orders from customers and deplete stock from the store's inventory.",
     "app": "https://drive.google.com/file/d/1Q7wjaqreg-Ru4SzIaCqHSAutW12wpvhb/view",
     "repo": "https://github.com/jhanisusM/MySQLandNode",
