@@ -24,7 +24,7 @@ const resume = () => {
                             
                             <Button
                                 alt="Resume"
-                                href={"https://drive.google.com/file/d/1AUYkLiC1_-GXcJpTKwqr0jHB630IyOtH/view?usp=sharing"}  
+                                href={"https://drive.google.com/file/d/1CHIYQjN2FugyNNXGTw7T75oaqnjGIG_x/view?usp=sharing"}  
                                 > <span className="glyphicon glyphicon-file" /> View Resume </Button>
                             <span id="space" />
                         </FormGroup>
