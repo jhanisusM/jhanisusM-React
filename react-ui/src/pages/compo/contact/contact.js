@@ -105,7 +105,7 @@ class contact extends Component {
                                         name="email"
                                         // value={this.state.email}
                                         onChange={this.handleInputChange}
-                                        placeholder="Eamil (required)" />
+                                        placeholder="Email (required)" />
                                 </FormGroup>
                                 <FormGroup>
                                     <Label for="message">Message:</Label>
