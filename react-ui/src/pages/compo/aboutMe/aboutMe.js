@@ -21,6 +21,17 @@ const aboutMe = () => {
         <a href="https://stackoverflow.com/users/8730147/jhanisusm" className="btn btn-dark" target="blank">
           <span className="fa fa-stack-overflow"></span>
         </a>
+        <br />
+        <br />
+        <span className="cdd">
+        <strong> <u> Code </u> </strong>
+        </span>
+        <span className="cdd">
+        <strong> <u>  Driven </u></strong>
+        </span>
+        <span className="cdd">
+        <strong><u> Design </u> </strong>
+        </span>
       </Hero>
          <Container style={{ marginTop: 30 }}>
         <Row>
