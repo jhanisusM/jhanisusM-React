@@ -12,13 +12,13 @@ const aboutMe = () => {
         <div>
             <Hero backgroundImage={require("../../../images/la23.jpg")}>
                 <h1>Jhanisus Melendez</h1>
-                <a href="https://github.com/jhanisusM" className="btn btn-dark" target="blank">
+                <a href="https://github.com/jhanisusM" className="btn btn-dark" target="blank" style={{margin:" 0px 3px 0px" }}>
                     <span className="fa fa-github"></span>
                 </a>
-                <a href="https://www.linkedin.com/in/jhanisus/" className="btn btn-dark" target="blank">
+                <a href="https://www.linkedin.com/in/jhanisus/" className="btn btn-dark" target="blank" style={{margin:" 0px 3px 0px" }}>
                     <span className="fa fa-linkedin-square"></span>
                 </a>
-                <a href="https://stackoverflow.com/users/8730147/jhanisusm" className="btn btn-dark" target="blank">
+                <a href="https://stackoverflow.com/users/8730147/jhanisusm" className="btn btn-dark" target="blank" style={{margin:" 0px 3px 0px" }}>
                     <span className="fa fa-stack-overflow"></span>
                 </a>
                 <div className="cdd">
