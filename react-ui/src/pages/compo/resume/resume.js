@@ -25,7 +25,12 @@ const resume = () => {
                             <Button
                                 alt="Resume"
                                 href={"https://drive.google.com/file/d/1CHIYQjN2FugyNNXGTw7T75oaqnjGIG_x/view?usp=sharing"}  
-                                > <span className="glyphicon glyphicon-file" /> View Resume </Button>
+                                > <span className="glyphicon glyphicon-file" /> View Resume PDF </Button>
+                            <span id="space" />
+                            <Button
+                                alt="Resume"
+                                href={"https://docs.google.com/document/d/1zuR2CcsO_9K8f8MnpouVK2mKQvCI8kro5Fbh2ZSTKK8/edit?usp=sharing"}  
+                                > <span className="glyphicon glyphicon-file" /> View Resume .txt </Button>
                             <span id="space" />
                         </FormGroup>
                     </Col>

@@ -24,27 +24,27 @@ const Navbar = () => (
           <li className="nav-item">
             <Link to="/about" className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-home" />  About
-        </Link>
+            </Link>
           </li>
           <li className="nav-item">
             <Link to="/tech" className={window.location.pathname === "/tech" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-floppy-o" />  Technology
-        </Link>
+            </Link>
           </li>
           <li className="nav-item">
             <Link to="/portfolio" className={window.location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-folder-open" /> Portfolio
-        </Link>
+           </Link>
           </li>
           <li className="nav-item">
             <Link to="/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-envelope" /> Contact
-        </Link>
+            </Link>
           </li>
           <li className="nav-item">
             <Link to="/resume" className={window.location.pathname === "/resume" ? "nav-link active" : "nav-link"}>
               <span className="fa fa-list-ul" /> Resume
-        </Link>
+            </Link>
           </li>
         </ul>
       </div>
