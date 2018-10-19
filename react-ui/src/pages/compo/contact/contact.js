@@ -81,8 +81,6 @@ class contact extends Component {
                                     <br />
                                     City of Monrovia, CA, United States
                                      <br />
-                                    Phone: 213.948.6356
-                                     <br />
                                     Email: jhanisus@gmail.com
                                      <br />
                                     <p>leave me a message:</p>
