@@ -46,11 +46,11 @@ const aboutMe = () => {
                             <img src={require("../../../images/pic1.jpg")} alt="" />
                         </div>
                         <p>
-                            I am an analytical full stack web developer with 3 years as an image reading analyst. My attention to detail and adaptability
-                              to shifting priorities has afforded me the ability to facilitate and act as a liaison for various projects.
-                              I have a technical background in the hard sciences, and I am a UCLA bootcamp alumnus with experience in dynamic
-                              web applications using Mongodb, MySQL, Express, Node JS, React, HTML/CSS, and C++. Driven to exceed customer
-                              expectations by delivering valuable well-designed products that innovate technical solutions.
+                           I am an analytical chemist turned developer.  My technical background in the hard sciences, along with my desire
+                           to help people simplify their lives, has driven me to pursue a career as a developer.I have an aptness for coding, 
+                           learning, and exploring new technologies. I am experienced in dynamic web applications using JavaScript, HTML5, 
+                           CSS3, React, Mongodb, MySQL, Express, Node JS, and C++. I will be a creative, enthusiastic, and diligent asset 
+                           to the your team team. 
           </p>
                     </Col>
                 </Row>
