@@ -90,7 +90,7 @@ class contact extends Component {
                             </div>
                             <Form style={{ width: 'auto' }} onSubmit={this.handleFormSubmit}>
                                 <FormGroup>
-                                    <Label for="name">Name:</Label>
+                                    <Label htmlFor="name">Name:</Label>
                                     <Input
                                         type="text"
                                         name="name"
@@ -99,7 +99,7 @@ class contact extends Component {
                                         placeholder="Name (required)" />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label for="email">Email:</Label>
+                                    <Label htmlFor="email">Email:</Label>
                                     <Input
                                         type="email"
                                         name="email"
@@ -108,7 +108,7 @@ class contact extends Component {
                                         placeholder="Email (required)" />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label for="message">Message:</Label>
+                                    <Label htmlFor="message">Message:</Label>
                                     <Input
                                         type="textarea"
                                         name="message"
